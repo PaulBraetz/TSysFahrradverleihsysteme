@@ -1,0 +1,129 @@
+.d-flex {
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+}
+
+.head>div {
+    display: flex;
+    justify-content: center;
+}
+
+.head>.title {
+    font-size: xx-large;
+}
+
+.head>.authors {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.head>.authors>a {
+    margin-left: 1em;
+    color: black;
+    white-space: nowrap;
+}
+
+.head>.authors>a:first-child {
+    margin: 0;
+}
+
+.head>.subtitle {
+    margin-top: 1em;
+    font-style: italic;
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin-top: 2em;
+}
+
+.topic .topic{
+    padding-left: 1rem;
+    font-size: smaller;
+    border: 0px;
+    border-left: 1px;
+    border-color: rgba(0,0,0,0.5);
+    border-style:solid;
+}
+
+.topic>.title {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: lighter;
+}
+
+.topic>.content {
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-weight: normal;
+}
+
+.topic>.content>.column{
+    display: flex;
+    flex-direction: column;
+}
+
+img+.image-description{
+    color:rgba(0,0,0,0.5);
+    font-style: italic;
+    font-size: smaller;
+}
+
+/*phone size*/
+.topic>.content>:not(.table-of-contents) {
+    max-width: 90vw;
+}
+
+/*> phone size*/
+@media(min-width: 600px) {
+    .topic>.content>:not(.table-of-contents) {
+        max-width: 80vw;
+    }
+}
+
+/*> tablet size*/
+@media(min-width: 900px) {
+    .topic>.content>:not(.table-of-contents) {
+        max-width: 60vw;
+    }
+}
+
+/*> regular size*/
+@media(min-width: 1800px) {
+    .topic>.content>:not(.table-of-contents) {
+        max-width: 35vw;
+    }
+}
+
+
+/*> xxl size*/
+@media(min-width: 2400px) {
+    .topic>.content>:not(.table-of-contents) {
+        max-width: 25vw;
+    }
+}
