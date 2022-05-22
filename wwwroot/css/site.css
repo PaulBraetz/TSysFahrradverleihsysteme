@@ -30,6 +30,7 @@ body {
 
 .head>.title {
     font-size: xx-large;
+    text-align: center;
 }
 
 .head>.authors {
@@ -40,8 +41,8 @@ body {
 
 .head>.authors>a {
     margin-left: 1em;
-    color: black;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 .head>.authors>a:first-child {
@@ -59,7 +60,6 @@ body {
 .topic {
     display: flex;
     flex-direction: column;
-    color: black;
     margin-top: 2em;
 }
 
