@@ -6,180 +6,234 @@
         Zweiradverleihsysteme
     </title>
     <meta charset="utf8" />
-    <base href="wwwroot/"/>
-    <link rel="stylesheet" type="text/css" href="css/site.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico?v=1" />
+    <link rel="stylesheet" type="text/css" href="wwwroot/css/site.css" />
+    <link rel="icon" type="image/x-icon" href="wwwroot/favicon.ico?v=1" />
 </head>
 
 <body>
-    <div class="head">
-        <div class="title">
-            Zweiradverleihsysteme
+    <article>
+        <div class="head">
+            <div class="title">
+                Zweiradverleihsysteme
+            </div>
+            <div class="authors">
+                <a href="mailto:paul.braetz@th-wildau.de">
+                    Paul Brätz
+                </a>
+                <a href="mailto:florian.martins@th-wildau.de">
+                    Florian Martins
+                </a>
+                <a href="mailto:ulrich.schuppe@th-wildau.de">
+                    Ulrich Schuppe
+                </a>
+            </div>
+            <div class="subtitle">
+                T21 - Telematiksysteme (2022)
+            </div>
+            <div class="subtitle">
+                Technische Hochschule Wildau
+            </div>
         </div>
-        <div class="authors">
-            <a href="mailto:paul.braetz@th-wildau.de">
-                Paul Brätz
-            </a>
-            <a href="mailto:florian.martins@th-wildau.de">
-                Florian Martins
-            </a>
-            <a href="mailto:ulrich.schuppe@th-wildau.de">
-                Ulrich Schuppe
-            </a>
+        <div class="topic">
+            <div class="title">
+                Inhaltsverzeichnis
+            </div>
+            <div class="content">
+                <ol class="table-of-contents">
+                    <li>
+                        <a href="#zieldefinition">
+                            Zieldefinition
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#funktionsanalyse">
+                            Funktionsanalyse
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#komponentenwahl">
+                            Komponentenwahl
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#systemabbild">
+                            Systemabbild
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#leistungsanalyse">
+                            Leistungsanalyse
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#umsetzungskritik">
+                            Umsetzungskritik
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#quellen">
+                            Quellen
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#literaturverzeichnis">
+                            Literaturverzeichnis
+                        </a>
+                    </li>
+                </ol>
+            </div>
         </div>
-        <div class="subtitle">
-            T21 - Telematiksysteme (2022)
-        </div>
-    </div>
-    <div class="topic">
-        <div class="title">
-            Inhaltsverzeichnis
-        </div>
-        <div class="content">
-            <ol class="table-of-contents">
-                <li>
-                    Zieldefinition
-                </li>
-                <li>
-                    Funktionsanalyse
-                </li>
-                <li>
-                    Komponentenwahl
-                </li>
-                <li>
-                    Systemabbild
-                </li>
-                <li>
-                    Leistungsanalyse
-                </li>
-                <li>
-                    Umsetzungskritik
-                </li>
-            </ol>
-        </div>
-    </div>
-    <div class="topic">
-        <div class="title">
-            Zieldefinition
-        </div>
-        <div class="content">
-            <div class="column">
-                <p>
-                    Zweiradverleihsysteme sind Systeme, die es einem Nutzer oder Kunden erlauben, ein Zweirad zu leihen.
-                    Neben
-                    dieser grundlegenden Eigenschaft eines Zweiradverleihsystems ist die Definition sekundärer Ziele
-                    vonnöten, um eine zufriedenstellende Umsetzung dessen zu ermöglichen. Diese Ziele lassen sich zu
-                    verschiedenen Graden den wirtschaftlichen, ökologischen und sozialen Interessen der Stakeholder des
-                    Systems zuordnen.
-                </p>
-                <div class="topic">
-                    <div class="title">
-                        Automatisierung
-                    </div>
-                    <div class="content">
-                        <p>
+        <div class="topic" id="zieldefinition">
+            <div class="title">
+                Zieldefinition
+            </div>
+            <div class="content">
+                <div class="column">
+                    <span>
+                        Zweiradverleihsysteme sind Systeme, die es einem Nutzer oder Kunden erlauben, ein Zweirad zu
+                        leihen.
+                        Neben
+                        dieser grundlegenden Eigenschaft eines Zweiradverleihsystems ist die Definition sekundärer Ziele
+                        vonnöten, um eine zufriedenstellende Umsetzung dessen zu ermöglichen. Diese Ziele lassen sich zu
+                        verschiedenen Graden den wirtschaftlichen, ökologischen und sozialen Interessen der Stakeholder
+                        des
+                        Systems zuordnen.
+                    </span>
+                    <div class="topic">
+                        <div class="title">
+                            Automatisierung
+                        </div>
+                        <div class="content">
                             Mithilfe strenger Digitalisierung und Prozessautomatisierung kann der Personalaufwand
                             des laufenden Systems minimiert werden. Automatisierte Systeme, die komplexe Aufgaben
                             erfüllen, sind allgemein fehlerresistenter, skalierbarer sowie globaler anwendbar und
                             damit wirtschaftlicher.
                             Auch ist der Nutzeraufwand bei Verwendung eines entsprechend ausgelegtem
                             automatisierten, digitalen Systems geringer.
-                        </p>
+                        </div>
                     </div>
+                    <div class="topic">
+                        <div class="title">
+                            Verwaltung
+                        </div>
+                        <div class="content">
+                            Zur Auswertung von Daten, Abrechnungen und Verwaltung der Zweiradflotte ist ein
+                            zentrales Verwaltungssystem vonnöten. Es ist mit einer örtlich stark verteilten sowie
+                            variierenden Last zu rechnen. Daher muss das Verwaltungssystem skalierbar und
+                            global unabhängig sein. Für Softwarelösungen wird meist auch ein Anspruch an Modularität
+                            gestellt. Dieser kann hier ducrh die Möglichkeit der Erweiterung auf andere Fahrzeuge,
+                            Bezahlmöglichkeiten abgebildet werden. Grundsätzlich sollte das System softwaretechnisch
+                            modern entwickelt werden, um eine langzeitliche Unterstützung und Wartung zu
+                            vereinfachen.
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="title">
+                            Wartung
+                        </div>
+                        <div class="content">
+                            Das System sollte möglichst wartungsarm sein. Dieses Ziel trifft sowohl auf Hard- wie
+                            auch Software zu. Zweiräder sollen eine maximale Dienstzeit haben, ein wartungsarmes Design
+                            wird also auf lange Zeit die laufenden Kosten senken. Eine Balance zwischen initialen
+                            Anschaffungskosten und laufenden Wartungskosten muss gefunden werden. Gleiches trifft auf
+                            Softwaremodule zu. Diese müssen zukunftsfähig entwickelt werden, um kritische Änderungen
+                            möglichst aufwandsarm zu ermöglichen. Sicherheitsupdates etc. sollten nicht durch die
+                            Steifheit der Software behindert werden. Eine ordentliche Programmierung und Dokumentation
+                            sind verpflichtend.
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="title">
+                            Wirtschaftlichkeit
+                        </div>
+                        <div class="content">
+                            Das System wird aus einem grundsätzlich wirtschaftlichen Interessen heraus geschaffen, daher
+                            ist eine Profitgenerierung unerlässlich. Nicht alle Funktionen müssen in ihrer Umsetzung auf
+                            wirtschaftlichkeit optimiert sein, summiert müssen sie dem Ziel jedoch gerecht werden.
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="title">
+                            Lageunabhägigkeit
+                        </div>
+                        <div class="content">
+                            Das System soll global eingesetzt werden. Daher müssen Komponenten lageunabhängig zur
+                            Ausführung ihrer Funktion fähig sein. Abhängikeit von eigens bereitgestellter Infrastruktur
+                            sollte im besten Falle nicht vorhanden, im schlechtesten minimal sein. Das Verwaltungssystem
+                            muss global erreichbar sein. Zahlungsmethoden müssen global zugänglich sein, also auch unter
+                            Umständen lokale Zahlungsmittel wie Girokarten akzeptieren. Das Zahlen mit international
+                            verwendeten Zahlungsmitteln wie PayPal, SEPA, BTC (o.Ä.) sollte unterstützt sein, um
+                            Spezialisierung auf lokale Zahlungsmittel möglichst zu vermeiden.
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="title">
+                            Datenschutz
+                        </div>
+                        <div class="content">
+                            Das System wird mit sensiblen sowie identifizierenden Daten von Nutzern arbeiten.
+                            Ortungsdaten, Identitätsdaten sowie Zahlungsdaten müssen vertrauclich behandelt werden.
+                            Zusätzlich müssen örtliche Datenschutzbestimmungen wie die DSGVO eingehalten werden.
+                        </div>
+                    </div>
+                    <img src="wwwroot/images/0 nextbike.png" />
+                    <span class="image-description">Ein Zweirad der Firma Nextbike [0]</span>
                 </div>
-                <div class="topic">
-                    <div class="title">
-                        Verwaltung
-                    </div>
-                    <div class="content">
-                        <p>
-                            
-                        </p>
-                    </div>
-                </div>
-                <img src="images/0 nextbike.png" />
-                <span class="image-description">Ein Zweirad der Firma Nextbike [0]</span>
             </div>
-        </div>
-    </div>
-    <div class="topic">
-        <div class="title">
-            Funktionsanalyse
-        </div>
-        <div class="content">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.
-            </p>
-        </div>
-    </div>
-    <div class="topic">
-        <div class="title">
-            Komponentenwahl
-        </div>
-        <div class="content">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.
-            </p>
-        </div>
-    </div>
-    <div class="topic">
-        <div class="title">
-            Systemabbild
-        </div>
-        <div class="content">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.
-            </p>
-        </div>
-    </div>
-    <div class="topic">
-        <div class="title">
-            Leistungsanalyse
-        </div>
-        <div class="content">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.
-            </p>
-        </div>
-    </div>
-    <div class="topic">
-        <div class="title">
-            Umsetzungskritik
-        </div>
-        <div class="content">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.
-            </p>
-        </div>
-    </div>
-    <div class="topic">
-        <div class="title">
-            Quellen
-        </div>
-        <div class="content">
-            [0] - https://www.nextbike.net/wp-content/uploads/2018/02/0073_Slider_Standard.png 21.05.2022
-        </div>
-    </div>
-    <div class="topic">
-        <div class="title">
-            Literaturverzeichnis
-        </div>
-    </div>
+            <div class="topic" id="funktionsanalyse">
+                <div class="title">
+                    Funktionsanalyse
+                </div>
+                <div class="content">
+
+                </div>
+            </div>
+            <div class="topic" id="komponentenwahl">
+                <div class="title">
+                    Komponentenwahl
+                </div>
+                <div class="content">
+
+                </div>
+            </div>
+            <div class="topic" id="systemabbild">
+                <div class="title">
+                    Systemabbild
+                </div>
+                <div class="content">
+
+                </div>
+            </div>
+            <div class="topic" id="leistungsanalyse">
+                <div class="title">
+                    Leistungsanalyse
+                </div>
+                <div class="content">
+
+                </div>
+            </div>
+            <div class="topic" id="umsetzungskritik">
+                <div class="title">
+                    Umsetzungskritik
+                </div>
+                <div class="content">
+
+                </div>
+            </div>
+            <div class="topic" id="quellen">
+                <div class="title">
+                    Quellen
+                </div>
+                <div class="content">
+                    [0] - https://www.nextbike.net/wp-content/uploads/2018/02/0073_Slider_Standard.png 21.05.2022
+                </div>
+            </div>
+            <div class="topic" id="literaturverzeichnis">
+                <div class="title">
+                    Literaturverzeichnis
+                </div>
+            </div>
+    </article>
 </body>
 
 </html>
