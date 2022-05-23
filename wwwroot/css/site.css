@@ -104,7 +104,17 @@ body {
     flex-direction: column;
 }
 
-img+.image-description {
+.image-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+img{
+    max-width: inherit;
+}
+.image-description {
     color: rgba(0, 0, 0, 0.5);
     font-style: italic;
     font-size: smaller;
