@@ -123,6 +123,9 @@ img{
 .table-of-contents a {
     text-decoration: none;
 }
+.table-of-contents ol{
+    list-style: lower-latin;
+}
 
 /*phone size*/
 .topic>.content>:not(.table-of-contents) {
