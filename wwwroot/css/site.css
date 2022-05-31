@@ -31,7 +31,7 @@ body {
 .title {
     display: flex;
     justify-content: center;
-    color: rgb(25,25,112);
+    color: rgb(25, 25, 112);
 }
 
 .head>.title {
@@ -63,6 +63,20 @@ body {
     margin-top: 0;
 }
 
+/*
+&#9206;   =   ⏶
+&#9207;   =   ⏷
+*/
+details>summary{
+    cursor: pointer;
+}
+details>summary::before{
+    content: "⏷";
+}
+details[open]>summary::before{
+    content: "⏶";
+}
+
 .topic {
     display: flex;
     flex-direction: column;
@@ -73,22 +87,23 @@ body {
     padding-left: 1rem;
     border: 0;
     border-left: 1pt;
-    border-color: rgb(25,25,112);
+    border-color: rgb(25, 25, 112);
     border-style: solid;
 }
 
 .topic>.title {
-    font-size:x-large;
+    font-size: x-large;
     font-variant: small-caps;
     margin-bottom: 5pt;
 }
-.topic .topic>.title{
+
+.topic .topic>.title {
     font-size: large;
-    font-variant:normal;
-    justify-content:start;
+    font-variant: normal;
+    justify-content: start;
 }
 
-.content{
+.content {
     text-align: justify;
 }
 
@@ -104,16 +119,18 @@ body {
     flex-direction: column;
 }
 
-.image-container{
+.image-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-left: 5vw;
     padding-right: 5vw;
 }
-img{
+
+img {
     max-width: inherit;
 }
+
 .image-description {
     color: rgba(0, 0, 0, 0.5);
     font-style: italic;
@@ -123,33 +140,34 @@ img{
 .table-of-contents a {
     text-decoration: none;
 }
-.table-of-contents ol{
+
+.table-of-contents ol {
     list-style: lower-latin;
 }
 
 /*phone size*/
 .topic>.content>:not(.table-of-contents) {
-    max-width: 90vw;
+    max-width: 100vw;
 }
 
 /*> phone size*/
 @media(min-width: 600px) {
     .topic>.content>:not(.table-of-contents) {
-        max-width: 80vw;
+        max-width: 90vw;
     }
 }
 
 /*> tablet size*/
 @media(min-width: 900px) {
     .topic>.content>:not(.table-of-contents) {
-        max-width: 60vw;
+        max-width: 70vw;
     }
 }
 
 /*> regular size*/
 @media(min-width: 1800px) {
     .topic>.content>:not(.table-of-contents) {
-        max-width: 35vw;
+        max-width: 40vw;
     }
 }
 
@@ -157,6 +175,6 @@ img{
 /*> xxl size*/
 @media(min-width: 2400px) {
     .topic>.content>:not(.table-of-contents) {
-        max-width: 25vw;
+        max-width: 30vw;
     }
 }
