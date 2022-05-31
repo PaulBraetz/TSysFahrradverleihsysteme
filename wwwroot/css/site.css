@@ -63,18 +63,16 @@ body {
     margin-top: 0;
 }
 
-/*
-&#9206;   =   ⏶
-&#9207;   =   ⏷
-*/
 details>summary{
     cursor: pointer;
 }
 details>summary::before{
-    content: "⏷";
+    content: ">";
+    transform: rotate(90deg);
 }
 details[open]>summary::before{
-    content: "⏶";
+    content: "<";
+    transform: rotate(90deg);
 }
 
 .topic {
