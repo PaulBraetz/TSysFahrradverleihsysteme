@@ -63,14 +63,16 @@ body {
     margin-top: 0;
 }
 
-details>summary{
+details>summary {
     cursor: pointer;
 }
-details>summary::before{
+
+details>summary::before {
     content: ">";
     transform: rotate(90deg);
 }
-details[open]>summary::before{
+
+details[open]>summary::before {
     content: "<";
     transform: rotate(90deg);
 }
