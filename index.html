@@ -83,12 +83,52 @@
                         </a>
                         <ol>
                             <li>
-                                <a href="#ortung">
+                                <a href="#funktion-ortung">
                                     Ortung
                                 </a>
                             </li>
                             <li>
-                                <a href="#systemabbild-abstrakt">
+                                <a href="#funktion-abrechnung">
+                                    Abrechnung
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#funktion-wartung">
+                                    Wartung
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#funktion-interface">
+                                    Benutzeroberfläche
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#funktion-stromversorgung">
+                                    Stromversorgung
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#funktion-sperrung">
+                                    Sperrung / Entriegelung
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#funktion-neuverteilung">
+                                    Neuverteilung
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#funktion-entsorgung">
+                                    Entsorgung
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#funktion-verwaltung">
+                                    Verwaltung
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#funktion-systemabbild">
                                     Systemabbild - Abstrakt
                                 </a>
                             </li>
@@ -100,7 +140,52 @@
                         </a>
                         <ol>
                             <li>
-                                <a href="#systemabbild-konkret">
+                                <a href="#komponente-ortung">
+                                    Ortung
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#komponente-abrechnung">
+                                    Abrechnung
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#komponente-wartung">
+                                    Wartung
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#komponente-interface">
+                                    Benutzeroberfläche
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#komponente-stromversorgung">
+                                    Stromversorgung
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#komponente-sperrung">
+                                    Sperrung / Entriegelung
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#komponente-neuverteilung">
+                                    Neuverteilung
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#komponente-entsorgung">
+                                    Entsorgung
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#komponente-verwaltung">
+                                    Verwaltung
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#komponente-systemabbild">
                                     Systemabbild - Konkret
                                 </a>
                             </li>
@@ -250,86 +335,142 @@
                         Aus der Zieldefinition lassen sich Funktionen ableiten, die für den Betrieb des Systems vonnöten
                         sind.
                     </span>
-                    <div class="topic" id="ortung">
+                    <div class="topic" id="funktion-ortung">
                         <div class="title">
                             Ortung
                         </div>
                         <div class="content">
                             Die Verteilung von Zweirädern muss verwaltet werden. Nutzer müssen das nächstliegende Rad
-                            finden können. Eine Ortungsfunktion ist also unabdingbar.
+                            finden können. Eine Ortungsfunktion ist also unabdingbar. Nicht nur für den Nutzerkomfort,
+                            auch für die Verwaltung und Neuverteilung ist eine Hotspoterkennung nötig. Diese setzt eine
+                            Ortungsfunktion der einzelnen Räder voraus. Ortungsdaten müssen von den Zweirädern
+                            ermittelt, an die zentrale Verwaltung übermittelt und von dieser verarbeitet werden.
                         </div>
                     </div>
-                    <div class="topic" id="abrechnung">
+                    <div class="topic" id="funktion-abrechnung">
                         <div class="title">
                             Abrechnung
                         </div>
                         <div class="content">
                             Die Kosten der Nutzung von Zweirädern müssen nach einem Schlüssel berechnet werden. Zwei
-                            Möglichkeiten der Abrechnung sind zeit- oder streckenabhängige Gebühren.
+                            Möglichkeiten der Abrechnung sind zeit- oder streckenabhängige Gebühren. Bei einer
+                            streckenbasierten Abrechnung stellt sich die Datenermittlung- und Verarbeitung als
+                            komplizierter heraus, als es die zeitbasierte ermöglichen würde. Die ermittelten Daten
+                            entsprechen allerdings genauer der tatsächlichen Nutzung. Eine streckenbasierte Abrechnung
+                            könnte durch die ständige Übermittlung von Ortungsdaten durch das Zweirad erfolgen. Eine
+                            zeitbasierte Abrechnung kann mit der Erfassung des Entsperrungs- und Sperrungszeitpunktes
+                            erfolgen.
                         </div>
                     </div>
-                    <div class="topic" id="abrechnung">
+                    <div class="topic" id="funktion-wartung">
                         <div class="title">
                             Wartung
                         </div>
                         <div class="content">
+                            Ein Mechanismus der Wartung muss zum Erhalt der Zweiradflotte bereitgestellt werden.
+                            Zweiräder müssen geortet, ihr Zustand ermittelt, repariert oder entsorgt und anschließend
+                            neuverteilt werden.
                         </div>
                     </div>
-                    <div class="topic" id="abrechnung">
+                    <div class="topic" id="funktion-interface">
                         <div class="title">
                             Benutzeroberfläche
                         </div>
                         <div class="content">
+                            Eine Benutzeroberfläche zur Interaktion zwischen System und Nutzer ist unerlässlich. Nutzer
+                            müssen authentifiziert werden, Zugriff auf Verleihmechaniken haben, ihre Abrechnungen
+                            einsehen und Kontakt zum Kundensupport aufnehmen können.
                         </div>
                     </div>
-                    <div class="topic" id="abrechnung">
+                    <div class="topic" id="funktion-statuserhebung">
                         <div class="title">
                             Statuserhebung
                         </div>
                         <div class="content">
+                            Zur Verwaltung der Zweiradflotte müssen Statuserhebungen für jedes einzelne Rad erfolgen.
+                            Das Rad muss Betriebsdaten ermitteln und diese an die zentrale Verwaltung übermitteln. Die
+                            zentrale Verwaltung nimmt die Daten an und verwaltet sie.
                         </div>
-                    </div>                    
-                    <div class="topic" id="abrechnung">
+                    </div>
+                    <div class="topic" id="funktion-stromversorgung">
                         <div class="title">
                             Stromversorgung
                         </div>
                         <div class="content">
+                            Zum Betrieb der telematischen und antriebstechnischen Systeme an Bord des Zweirades ist eine
+                            Stromversorgung vonnöten. In Abhängigkeit davon, ob die Zweiräder über einen Eigenantrieb
+                            verfügen oder durch den Nutzer angetrieben werden sollen, ist eine Speicherlösung mit
+                            entsprechender
+                            Kapazität und Energiedichte zu wählen. Die Sicherheit des Nutzers muss konstruktions- und
+                            elektrotechnisch gegeben sein. Eine sichere Lösung ist bei höheren Kosten einer ansonsten
+                            gleichwertigen vorzuziehen. Der Energiespeicher muss über eine Ladefunktion geladen werden.
                         </div>
                     </div>
-                    <div class="topic" id="abrechnung">
+                    <div class="topic" id="funktion-sperrung">
                         <div class="title">
                             Sperrung / Entriegelung
                         </div>
                         <div class="content">
+                            Die Sperrung und Entsperrung des Zweirades muss möglich sein. Dabei ist nur die Nutzung des
+                            Rades zu verhindern, nicht der Transport selbst. Die Sperrung muss durch den Nutzer
+                            authorisiert werden, um gefährliche Sperrungen während der Nutzung zu verhindern. Die
+                            Entsperrung hingegen kann durch die zentrale Verwaltung, das Rad selbst oder den Nutzer
+                            authorisiert werden.
                         </div>
                     </div>
-                    <div class="topic" id="abrechnung">
+                    <div class="topic" id="funktion-neuverteilung">
                         <div class="title">
                             Neuverteilung
                         </div>
                         <div class="content">
+                            Zur Vermeidung von Ankunftshotspots und verwaisten Rädern wird ein Mechanismus zur
+                            Neuverteilung benötigt. Hier müssen solche Hotspots durch Analyse von Bewegungsdaten
+                            ermittelt werden. Räder, die über einen längeren Zeitraum ungenutzt bleiben, sollten an
+                            Sammelstellen oder ermittelte Abfahrtshotspots verteilt werden. Diese Neuverteilung sollte
+                            bei einer aktiven Lösung periodisch und bei einer passiven kontinuierlich stattfinden. Eine
+                            aktive Lösung würde vom System periodisch initiiert, eine passive liefe durchgehend.
                         </div>
                     </div>
-                    <div class="topic" id="abrechnung">
+                    <div class="topic" id="funktion-entsorgung">
                         <div class="title">
                             Entsorgung
                         </div>
                         <div class="content">
+                            Sollte festgestellt werden, dass ein Zweirad nicht länger betriebstauglich sein sollte, muss
+                            es entsorgt werden. Diese Feststellung erfolgt bei einer Wartungssondierung. Die Entsorgung
+                            kann per Verkauf oder Verschrottung erfolgen.
                         </div>
                     </div>
-                    <div class="topic" id="abrechnung">
+                    <div class="topic" id="funktion-verwaltung">
                         <div class="title">
-                            Datenverarbeitung
+                            Verwaltung
                         </div>
                         <div class="content">
+                            Im Zweiradverleihsystem werden identifizierende und sensible Daten verarbeitet.
+                            Datenschutzkonforme Verarbeitung, Speicherung und Übermittlung solcher Daten ist zwingend
+                            notwendig. Hier ist ein rechtliches Konzept zu erstellen, welches garantiert, dass Daten den
+                            örtlichen Datenschutzbestimmungen entsprechend behandelt werden. Systemkomponenten müssen
+                            über verschlüsselte Kanäle kommunizieren. Das Verwaltungssystem muss global zugänglich und
+                            unabhängig von spezialisierter -aufzubauender- Infrastruktur (wie Sendemasten) sein.
+                            Firmeninterne Systeme müssen gekapselt sein, um den Zugriff von Dritten zu verhindern.
                         </div>
                     </div>
-                    <div class="topic" id="systemabbild-abstrakt">
+                    <div class="topic" id="funktion-systemabbild">
                         <div class="title">
                             Systemabbild - Abstrakt
                         </div>
                         <div class="content">
-
+                            <div class="column">
+                                <span>
+                                    Aus der Funktionsanalyse lässt sich ein abstraktes Systemabbild ableiten.
+                                </span>
+                                <div class="image-container">
+                                    <img src="/wwwroot/images/Systemabbild - Abstrakt.png">
+                                    <span class="image-description">
+                                        Systemabbild der Funktionen
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -341,26 +482,113 @@
             </summary>
             <div class="content">
                 <div class="column">
-                    <div class="topic" id="systemabbild-konkret">
+                    <span>
+                        Jede Funktion muss durch eine Komponente realisiert werden. Die Wahl der Komponente muss sowohl
+                        der Zieldefinition als auch der zu realisierenden Funktion entsprechen.
+                    </span>
+                    <div class="topic" id="komponente-ortung">
                         <div class="title">
-                            Systemabbild - Konkret
+                            Ortung
                         </div>
                         <div class="content">
 
                         </div>
                     </div>
+                    <div class="topic" id="komponente-abrechnung">
+                        <div class="title">
+                            Abrechnung
+                        </div>
+                        <div class="content">
+
+                        </div>
+                    </div>
+                    <div class="topic" id="komponente-wartung">
+                        <div class="title">
+                            Wartung
+                        </div>
+                        <div class="content">
+
+                        </div>
+                    </div>
+                    <div class="topic" id="komponente-interface">
+                        <div class="title">
+                            Benutzeroberfläche
+                        </div>
+                        <div class="content">
+
+                        </div>
+                    </div>
+                    <div class="topic" id="komponente-statuserhebung">
+                        <div class="title">
+                            Statuserhebung
+                        </div>
+                        <div class="content">
+
+                        </div>
+                    </div>
+                    <div class="topic" id="komponente-stromversorgung">
+                        <div class="title">
+                            Stromversorgung
+                        </div>
+                        <div class="content">
+
+                        </div>
+                    </div>
+                    <div class="topic" id="komponente-sperrung">
+                        <div class="title">
+                            Sperrung / Entriegelung
+                        </div>
+                        <div class="content">
+
+                        </div>
+                    </div>
+                    <div class="topic" id="komponente-neuverteilung">
+                        <div class="title">
+                            Neuverteilung
+                        </div>
+                        <div class="content">
+
+                        </div>
+                    </div>
+                    <div class="topic" id="komponente-entsorgung">
+                        <div class="title">
+                            Entsorgung
+                        </div>
+                        <div class="content">
+
+                        </div>
+                    </div>
+                    <div class="topic" id="komponente-verwaltung">
+                        <div class="title">
+                            Verwaltung
+                        </div>
+                        <div class="content">
+
+                        </div>
+                    </div>
+                    <div class="topic" id="komponente-systemabbild">
+                        <div class="title">
+                            Systemabbild - Konkret
+                        </div>
+                        <div class="content">
+                            <div class="column">
+                                <span>
+                                    Aus der Komponentenwahl und dem abstrakten Systemabbild lässt sich ein konkretes
+                                    Systemabbild bilden.
+                                </span>
+                                <div class="image-container">
+                                    <img src="/wwwroot/images/Systemabbild - Konkret.png">
+                                    <span class="image-description">
+                                        Systemabbild der Komponenten
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </details>
-        <details class="topic" open="" id="leistungsanalyse">
-            <summary class="title">
-                Leistungsanalyse
-            </summary>
-            <div class="content">
-
-            </div>
-        </details>
-        <details class="topic" open="" id="umsetzungskritik">
+        <details id="umsetzungskritik" class="topic" open="">
             <summary class="title">
                 Umsetzungskritik
             </summary>
@@ -368,12 +596,12 @@
 
             </div>
         </details>
-        <details class="topic" open="" id="quellenverzeichnis">
+        <details id="quellenverzeichnis" class="topic" open="">
             <summary class="title">
                 Quellenverzeichnis
             </summary>
             <div class="content">
-                [0] - https://www.nextbike.net/wp-content/uploads/2018/02/0073_Slider_Standard.png 21.05.2022
+
             </div>
         </details>
     </article>
