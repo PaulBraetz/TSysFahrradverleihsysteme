@@ -67,16 +67,6 @@ details>summary {
     cursor: pointer;
 }
 
-details>summary::before {
-    content: ">";
-    transform: rotate(90deg);
-}
-
-details[open]>summary::before {
-    content: "<";
-    transform: rotate(90deg);
-}
-
 .topic {
     display: flex;
     flex-direction: column;
@@ -120,6 +110,7 @@ details[open]>summary::before {
 }
 
 .image-container {
+    margin-top: 5pt;
     display: flex;
     justify-content: center;
     flex-direction: column;
