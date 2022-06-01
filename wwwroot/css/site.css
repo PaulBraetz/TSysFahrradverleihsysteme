@@ -145,6 +145,10 @@ img {
     list-style: lower-latin;
 }
 
+.source-reference{
+    text-decoration: none;
+}
+
 ol.sources {
     counter-reset: orderedlist;
     list-style: none;
