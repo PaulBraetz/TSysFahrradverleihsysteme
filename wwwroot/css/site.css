@@ -128,6 +128,29 @@ img {
     font-size: smaller;
 }
 
+.image-creator-annotation {
+    color: rgba(0, 0, 0, 0.5);
+}
+.image-creator-annotation::before {
+    color: rgba(0, 0, 0, 0.5);
+    content: "[Ersteller: ";
+}
+.image-creator-annotation::after {
+    color: rgba(0, 0, 0, 0.5);
+    content: "]";
+}
+.author-annotation {
+    color: rgba(0, 0, 0, 0.5);
+}
+.author-annotation::before {
+    color: rgba(0, 0, 0, 0.5);
+    content: "[Autor: ";
+}
+.author-annotation::after {
+    color: rgba(0, 0, 0, 0.5);
+    content: "]";
+}
+
 .table-of-contents a {
     text-decoration: none;
 }
