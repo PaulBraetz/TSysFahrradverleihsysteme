@@ -145,6 +145,23 @@ img {
     list-style: lower-latin;
 }
 
+ol.sources {
+    counter-reset: orderedlist;
+    list-style: none;
+    text-align: start;
+}
+ol.sources>li{
+    margin-top: 5pt;
+}
+ol.sources>li:first-of-type{
+    margin-top: 0;
+}
+
+ol.sources>li::before {
+    counter-increment: orderedlist;
+    content: "[" counter(orderedlist) "]";
+}
+
 /*phone size*/
 .topic>.content>:not(.table-of-contents) {
     max-width: 100vw;
